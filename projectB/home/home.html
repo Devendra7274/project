@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .part1{
+              
+               width:100%;
+               height:628px;
+               background-image: url(Banner-1.jpg);
+               background-size:cover;
+               background-repeat: no-repeat;
+               
+        }
+        .navbar{
+                 width:90%;
+                 height:10vh;
+                 background-image: url(header-bg.png);
+                 background-size: cover;
+                 background-repeat: no-repeat;
+                 margin-top: 20px;
+                 margin-left: 70px;
+                 position: absolute;
+                
+        }
+        a{
+            text-decoration: none;
+            margin-left:30px;
+            font-size: 25px;
+            color:white;
+            font-weight: bold;
+    
+        }
+        a:hover{
+               color:rgb(6, 185, 6);
+        }
+        .nav{
+              margin-top: 15px;
+              padding-left: 300px;
+              background-image: url(logo1.png);
+              background-repeat: no-repeat;
+              background-size: 100px 100%;
+              
+        }
+        .content{
+                 width:500px;
+                 height:300px;
+                 margin:280px 0px 0px 100px;
+                 position: absolute;
+        }
+        #heading{
+                  font-size: 70px;
+                  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #subhead{
+                 width:80px;
+                 height:10px;
+                  background-color: rgb(2, 2, 59);
+                  font-size: 30px;
+                  display: inline;
+                  color:white;
+                  padding:0px 5px 0px 10px;
+        }
+        #pera{
+              text-align:left;
+              font-size: 22px;
+        }
+
+        #seeprod{
+                 background-color: rgb(7, 219, 7);
+                 margin-top:30px;
+                 border-radius: 20px;
+                 padding:20px 45px 20px 45px;
+                 font-size: 25px;
+                 text-align: center;
+                 border-style: none;
+                 cursor: pointer;
+        }
+        #seeprod:hover{
+              background-color: white;
+              color:rgb(3, 180, 3);
+              transition:1s;
+              
+        }
+        .part2{
+
+                width:100%;
+                height:300px;
+                
+        }
+        .d1{
+                width:24%;
+                height:300px;
+                float: left;
+                margin:4px;
+                
+                
+
+
+        }
+        #cont{
+            text-align: center;
+            margin-top: 200px;
+            font-size: 25px;
+        
+        }
+        .d1:hover{
+                background-color: rgb(5, 168, 5);
+                color:white;
+                transition:1s;
+        }
+        .part3{
+                height:100vh;
+                background-image: url(about-banner.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+        }
+        #about{
+                width:550px;
+                height: 350px;
+                margin-top: 150px;
+                margin-left: 100px;
+                position:absolute;
+        }
+        #rmore{
+                padding:15px 35px 15px 35px;
+                border-radius: 20px;
+                background-color: rgb(4, 175, 4);
+                color:white;
+                font-size: 20px;
+                border:none;
+        }
+        #rmore:hover{
+                          background-color: white;
+                          color:rgb(5, 184, 5);
+                          transition:1s;
+        }
+        .part4{
+                height:70vh;
+                
+        }
+        #p4about{
+                  width:400px;
+                  height:100px;
+                  margin:auto;
+                  margin-top: 40px;
+        
+                  
+        }
+        #p4head{
+                text-align: center;    
+                font-size: 30px;
+        }
+        #p4pera{
+                    text-align: center; 
+        }
+        #p41{
+              width:24%;
+              height:250px;
+              border:3px solid rgb(117, 248, 139);
+              margin-top: 60px;
+              float:left;
+              margin-left: 7px;
+              background-image: url(product-1.jpg);
+              background-repeat: no-repeat;
+              transition: 1s;
+              
+              
+        }
+        #p42{
+              width:24%;
+              height:250px;
+              border:3px solid rgb(117, 248, 139);
+              margin-top: 60px;
+              float:left;
+              margin-left: 7px;
+              background-image: url(product-2.jpg);
+              background-repeat: no-repeat;
+        }
+        #p43{
+              width:24%;
+              height:250px;
+              margin-top: 60px;
+              border:3px solid rgb(117, 248, 139);
+              float:left;
+              margin-left: 7px;
+              background-image: url(product-4.jpg);
+              background-repeat: no-repeat;
+        }
+        #p44{
+              width:24%;
+              height:250px;
+              margin-top: 60px;
+              border:3px solid rgb(117, 248, 139);
+              float:left;
+              margin-left: 7px;
+              background-image: url(product-3.jpg);
+              background-repeat: no-repeat;
+        }
+        #p4name{
+               margin-top:200px;
+               margin-left: 20px;
+               
+        }
+           .part5{
+                width:100%;
+                height:70vh;
+                background-color: rgba(5, 223, 5, 0.24);
+                position: absolute;
+                
+        
+               
+        }
+        .p51{
+              width:30%;
+              height:100px;
+              margin:auto;
+              margin-top: 40px;
+              text-align: center;
+            
+        }
+
+         .p52{
+              width:50%;
+              height:250px;
+              background-color: rgba(7, 212, 7, 0.849);
+              margin:auto;
+              margin-top: 25px;
+              display:flex;
+              border-radius: 20px;
+              
+               
+        }
+        .customer{
+                   width:45%;
+                   height:250px;
+                   background-image: url(custome.png);
+                   border-radius: 20px;
+                   background-size: cover;
+                   
+            
+        }
+        .custabout{ 
+                    width:50%;
+                    height:250px;
+                    text-align: right;
+                    
+                    
+        }
+        .part6{
+                width:100%;
+                height:100vh;
+                float: left;
+                margin-top: 50px;
+        }
+        .p61{
+               width:500px;
+               height:100px;
+               margin: auto;
+               text-align: center;
+        }
+
+        .p62{
+               width:80%;
+               height:70vh;
+               margin: auto;
+               margin-top: 50px;
+        }
+      .p621{
+             width:32%;
+             height:200px;
+             background-image:url(g-1.jpg);
+             background-size:cover;
+             float: left;
+             margin:10px 0px 0px 10px ;
+
+      }
+      .p622{
+             width:32%;
+             height:200px;
+             background-image:url(g-2.jpg);
+             background-size:cover;
+             float: left;
+             margin:10px 0px 0px 10px ;
+
+      }
+      .p623{
+             width:32%;
+             height:200px;
+             background-image:url(g-3.jpg);
+             background-size:cover;
+             float: left;
+             margin:10px 0px 0px 10px ;
+
+      }
+      .p624{
+             width:32%;
+             height:200px;
+             background-image:url(g-4.jpg);
+             background-size:cover;
+             float: left;
+             margin:10px 0px 0px 10px ;
+
+      }
+      .p625{
+             width:32%;
+             height:200px;
+             background-image:url(g-5.jpg);
+             background-size:cover;
+             float: left;
+             margin:10px 0px 0px 10px ;
+
+      }
+      .p626{
+             width:32%;
+             height:200px;
+             background-image:url(g-6.jpg);
+             background-size:cover;
+             float: left;
+             margin:10px 0px 0px 10px ;
+
+      }
+      #p6button{
+
+            padding:10px 20px 10px 20px;
+            border-radius: 20px;
+            color:white;
+            background-color: rgba(6, 202, 6, 0.856);
+            font-size: 18px;
+            margin: 50px 0px 0px 45%;
+            border-style: none;
+            cursor: pointer;
+      }
+      #p6button:hover{
+                 background-color: white;
+                          color:rgb(5, 184, 5);
+                          transition:1s;
+                          border:1px solid rgb(5, 184, 5);
+        
+      }
+      .part7{
+              width:100%;
+              height:50vh;
+              margin-top: 780px;
+      }
+      .p71{
+            height:50vh;
+            width:100%;
+            background-image: url(footer_bg.png);
+            background-size: cover;
+            margin-top: 150px;
+            
+            
+      }
+      .footer{
+               width:100%;
+               height:40px;
+               background-color: rgb(7, 228, 7);
+      }
+      .add{
+            width:300px;
+            height:35vh;
+            margin-top: 80px;
+            margin-left: 35px;
+            color:white;
+            float:left;
+            
+      }
+    
+      .feedback{
+            width:300px;
+            height:35vh;
+            margin-top: 80px;
+            margin-left: 30%;
+            color:rgb(255, 253, 253);
+            position: absolute;
+            
+            
+      }
+      #feed{
+             padding: 10px 40px 10px 40px;
+             background-color: green;
+             color:white;
+             font-size: 18px;
+             border-radius: 20px;
+             border-style: none;
+      }
+      #feedinput{
+
+             background-color: rgba(255, 228, 196, 0);
+             border:1px solid green;
+             padding:10px 25px 10px 25px;
+             color:white;
+
+      }
+      /* .links{
+              width:300px ;
+              height:100px;
+              border:1px solid red;
+              float: left;
+      } */
+    </style>
+</head>
+<body>
+    <div class="part1">
+
+        
+                <div class="navbar" >
+                    <div class="nav">
+                        <a href="home.html">Home</a>
+                        <a href="product.html">Product</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="content">
+
+
+                    <h1 id="heading">100% Organic</h1>
+                    <br>
+                    <h3 id="subhead">Fresh & Natural Farm Food</h3>
+                    <br>
+                    <br>
+                    <p id="pera">The redable content of a page when lookimg at this layout point of using of letter as opened</p>
+                    <button id="seeprod">ALL Product</button>
+                </div>
+
+    </div>
+    <div class="part2">
+        <div class="d1"><h3 id="cont">24/O7 Support</h3></div>
+        <div class="d1"><h3 id="cont">Free Shipping</h3></div>
+        <div class="d1"><h3 id="cont">Fresh & Healthy</h3></div>
+        <div class="d1"><h3 id="cont">From Our Farm</h3></div>
+    </div>
+    <div class="part3">
+
+        <div id="about">
+                <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 40px;">We Providing Services Since 1841 With Proud.</h1>
+                <br>
+                 <h3 style="font-size: 20px;">The Reliable content off a page looking layout using lorem ipsum is that it has</h3>
+                 <br>
+                 <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veniam eius asperiores perspiciatis, reiciendis exercitationem voluptas iusto nemo sequi? Perferendis nobis aspernatur ratione laudantium explicabo necessitatibus rem molestias repellat! Dolor praesentium laudantium qui explicabo unde? Impedit rerum voluptatibus neque, delectus, vero, enim sequi cum ab explicabo labore possimus a officiis!</p>
+                <br>
+                <br>
+                <br>
+                <button id="rmore">Read More</button>
+        </div>
+
+    </div>
+
+    <div class="part4">
+        <div id="p4about">
+                <h1 id="p4head"> Our Best Seller Product</h1>
+                <br>
+                <h4 id="p4pera">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum architecto magni eum laudantium!</h4>
+        </div>
+       <div class="fruits"> 
+        <div id="p41"><h2 id="p4name">Musk Melon <del style="color:red; margin-left: 85px;"> $25</del> $20</h2></div>
+        <div id="p42"><h2 id="p4name">Orange <del style="color:red; margin-left: 95px;"> $45</del> $35</h2></div>
+        <div id="p43"><h2 id="p4name">Dragon <del style="color:red; margin-left: 95px;"> $25</del> $15</h2></div>
+        <div id="p44"><h2 id="p4name">Apple <del style="color:red; margin-left: 95px;"> $65</del> $50</h2></div>
+     </div>   
+    </div>
+    <div class="part5">
+        <div class="p51"> <h1>Our Happy Customers</h1><br><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis illum dolore explicabo optio.</p></div>
+        <div class="p52">
+            <div class="customer"></div>
+            <div class="custabout"><p style="margin-top: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem rerum harum nobis suscipit?</p><br><h1>Jacob Oramson</h1><h3 style="color:white">Happy Customer</h3></div>
+        </div>
+
+        <div class="part6">
+            <div class="p61"> <h1>Our Gallery</h1><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugiat sapiente dolorum voluptatum.</p></div>
+            <div class="p62">
+                <div class="p621"></div>
+                <div class="p622"></div>
+                <div class="p623"></div>
+                <div class="p624"></div>
+                <div class="p625"></div>
+                <div class="p626"></div>
+
+                    <button id="p6button">View More</button>
+            </div>
+        </div>
+
+        <div class="part7">
+            <div class="p71">
+                <div class="add">
+                    <h1>Address</h1><br>
+                    <p>Aichher sec pi greater noida gautam buddha nagar</p><br>
+                    <p>Greater Noida Smart City</p>
+                    <p>+91 8130297274</p>
+                    <p>bdev37380@gmail.com</p>
+                </div>
+                <div class="feedback">
+                    <h1>FeedBack</h1><br>
+                    <input type="text" placeholder="Enter your Feedback" id="feedinput"><br>
+                    <br>
+
+                    <button id="feed">Send</button>
+                </div>
+
+                <!-- <div class="links">
+                      <ul>
+                        <li>products</li>
+                        <li>contact</li>
+                        <li>terms of use</li>
+                        <li>terms & conditions</li>
+                      </ul>
+                </div> -->
+
+            </div>
+            <div class="footer"></div>
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
